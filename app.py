@@ -13,7 +13,7 @@ def GetToken():
         "mec": os.getenv("MEC"),
     }
     with requests.session() as s:
-        r = s.post(url, headers=headers, json={}, verify=False).json()
+        r = s.post(url, headers=headers, json={}).json()
     return r["access_token"]
 
 def ClaimDaily():
