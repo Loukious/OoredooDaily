@@ -25,7 +25,7 @@ jobs:
 
     - name: Run Python script
       env:
-        TOKEN: ${{ secrets.TOKEN }}
+        AUTH: ${{ secrets.AUTH }}
         MEC: ${{ secrets.MEC }}
       run: |
         python app.py
